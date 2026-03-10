@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'your_dockerhub_username/my-simple-app'
+        DOCKER_IMAGE = 'alenaept/my-simple-app'
         DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
     }
 
@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main', 
-                url: 'https://github.com/your_username/your_repo.git'
+                url: 'https://github.com/alenaept/pract6.git'
             }
         }
 
